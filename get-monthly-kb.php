@@ -44,7 +44,7 @@ foreach($data as $update){
 		continue;
 	}
 
-	if(stripos($os, 'Microsoft Server') !== false){
+	if(stripos($os, ' Server') !== false){
 		$os = str_replace('Microsoft', 'Windows', $os);
 		if(stripos($description, 'Windows Server, version') !== false || 
 			stripos(strtolower($description), 'operating system') !== false){
